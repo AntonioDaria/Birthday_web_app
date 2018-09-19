@@ -1,0 +1,10 @@
+source 'https://rubygems.org'
+
+gem 'sinatra'
+ruby '2.5.1'
+gem 'rspec'
+gem 'shotgun'
+gem 'capybara'
+gem 'selenium-webdriver'
+gem 'pry'
+gem 'chromedriver-helper'

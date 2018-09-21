@@ -1,7 +1,12 @@
 <center>
-<% if @day.to_i == Date.today.day && @month.to_i == Date.today.month %> 
-Happy birthday <%=@name %>!!
+  <style>
+  body {
+    background-color: lightblue;
+}
+</style>
+<% if @day.to_i == Date.today.day && @month.to_i == Date.today.month %>
+<h1>Happy birthday <%=@name %>!!<h1>
 <%else %>
-<%=@name %> your birthday is in <%=@birthday.calculate(Date.new(2018,@month,@day)) %> days!!
+<h1><%=@name %> your birthday is in <%=@birthday.calculate(Date.new(2018,@month,@day)) %> days!!<h1>
 <%end%>
 </center>

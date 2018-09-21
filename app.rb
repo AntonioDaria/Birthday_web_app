@@ -1,5 +1,6 @@
 require 'sinatra/base'
 require 'date'
+require './lib/my_birthday'
 
 class Birthday < Sinatra::Base
 
@@ -20,17 +21,7 @@ enable :sessions
     @name = session[:name]
     @day = session[:day].to_i
     @month = session[:month].to_i
-    calculate(Date.new(2018,@month,@day))
+    @birthday = My_Birthday.new(Date.new(2018,@month,@day))
     erb :happyb
-  end
-
-  def calculate(end_date)
-    today = Date.today
-    end_date = end_date
-    difference = (end_date - today).to_i
-    if difference < 0
-    difference += 365
-    end
-    difference
   end
 end

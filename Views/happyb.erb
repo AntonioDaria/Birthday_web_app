@@ -1,5 +1,7 @@
-<% if @day.to_i == Date.today.day && @month.to_i == Date.today.month %>
+<center>
+<% if @day.to_i == Date.today.day && @month.to_i == Date.today.month %> 
 Happy birthday <%=@name %>!!
 <%else %>
-<%=@name %> your birthday is in <%=calculate(Date.new(2018,@month,@day)) %> days!!
+<%=@name %> your birthday is in <%=@birthday.calculate(Date.new(2018,@month,@day)) %> days!!
 <%end%>
+</center>

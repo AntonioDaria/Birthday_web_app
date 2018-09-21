@@ -1,20 +1,38 @@
-<h1>Hello There!!</h1>
-<h2>What is your name?</h2>
+<center>
+<form action='/happyb' method=post>
+  <style>
+  body {
+    background-color: lightblue;
+}
+</style>
+  <h1>Hello There!!</h1>
+  <div>
+    <img style='border:dashed blue 'src='http://bit.ly/1eze8aE'>
+  </div>
+  <h2>What is your name?</h2>
 
-<label for="name">
-  <input type= "text" name="name">
-</label><br><br>
-
-<div>
-  <img style='border:dashed blue 'src='http://bit.ly/1eze8aE'>
-</div>
-
-<form action='/home'>
+  <label for="name">
+    <input type= "text" name="name">
+  </label><br><br>
   <h3>When is your Birthday?<h3><br>
   Day:
   <label for="day">
     <input type= "text" name="day">
   </label>
-  Month:<br><br>
+  Month: <SELECT name="month">
+           <OPTION value = '1' type=text >January</OPTION>
+           <OPTION value = '2' type=text >February</OPTION>
+           <OPTION value = '3' type=text >March</OPTION>
+           <OPTION value = '4' type=text >April</OPTION>
+           <OPTION value = '5' type=text >May</OPTION>
+           <OPTION value = '6' type=text >June</OPTION>
+           <OPTION value = '7' type=text >July</OPTION>
+           <OPTION value = '8' type=text >August</OPTION>
+           <OPTION value = '9' type=text >September</OPTION>
+           <OPTION value = '10' type=text >October</OPTION>
+           <OPTION value = '11' type=text >November</OPTION>
+           <OPTION value = '12' type=text >december</OPTION>
+        </SELECT><br><br>
   <input type="submit" value="GO">
 </form>
+<center>

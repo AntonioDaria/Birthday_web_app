@@ -9,7 +9,6 @@ class My_Birthday
 
   def calculate(end_date)
     today = Date.today
-    # end_date = end_date
     difference = (end_date - today).to_i
     difference += 365 if difference < 0
     difference

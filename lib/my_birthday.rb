@@ -13,4 +13,8 @@ class My_Birthday
     difference += 365 if difference < 0
     difference
   end
+
+  def isbirthday
+    calculate(@end_date) == 0
+  end
 end

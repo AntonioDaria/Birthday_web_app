@@ -4,9 +4,9 @@
     background-color: lightblue;
 }
 </style>
-<% if @day.to_i == Date.today.day && @month.to_i == Date.today.month %>
+<% if @isbirthday %>
 <h1>Happy birthday <%=@name %>!!<h1>
 <%else %>
-<h1><%=@name %> your birthday is in <%=@birthday.calculate(Date.new(2018,@month,@day)) %> days!!<h1>
+<h1><%=@name %> your birthday is in <%=@difference %> days!!<h1>
 <%end%>
 </center>

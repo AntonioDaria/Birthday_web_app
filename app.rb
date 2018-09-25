@@ -23,6 +23,8 @@ class Birthday < Sinatra::Base
     @day = session[:day].to_i
     @month = session[:month].to_i
     @birthday = My_Birthday.new(Date.new(2018, @month, @day))
+    @difference = @birthday.calculate(Date.new(2018, @month, @day))
+    @isbirthday = @birthday.isbirthday
     erb :happyb
   end
 end
